@@ -3,7 +3,7 @@ from telegram.ext import ApplicationBuilder, MessageHandler, CommandHandler, Con
 import yt_dlp
 import os
 
-TOKEN = "8540571491:AAF-nsxRsLi9rF_PcfAhVnZaPlVtLky1VnE"
+TOKEN = os.getenv("8540571491:AAF-nsxRsLi9rF_PcfAhVnZaPlVtLky1VnE"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Send me any video link (YouTube, FB, Instagram, TikTok). I will download it!")
